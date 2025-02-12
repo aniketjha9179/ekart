@@ -1,9 +1,9 @@
 import express from 'express';
-import { loginOrSignUp } from '../controllers/user.js';
+import { getAllCategories } from '../controllers/category.js';
 
 const router = express.Router();
 
 // first api login
-router.post("/login",loginOrSignUp)
+router.get("/",getAllCategories)
 
 export default router;
