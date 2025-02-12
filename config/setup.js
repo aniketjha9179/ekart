@@ -65,4 +65,6 @@ export const buildAdminJS = async (app) => {
       name: "adminjs",
     }
   );
+//   admin router created
+  app.use(admin.options.rootPath, adminRouter)
 };
