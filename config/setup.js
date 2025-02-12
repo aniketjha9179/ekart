@@ -17,7 +17,7 @@ const DEFAULT_ADMIN = {
   password: "012345678",
 };
 
-const Authenticate = async (email, password) => {
+const authenticate = async (email, password) => {
   if (email === DEFAULT_ADMIN.email && password === DEFAULT_ADMIN.password) {
     return Promise.resolve(DEFAULT_ADMIN);
   }
